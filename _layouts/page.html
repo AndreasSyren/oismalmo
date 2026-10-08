@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}
+      <p class="page-lead">{{ page.lead }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="page-body container">
+  <div class="page-grid">
+    <article class="page-content">
+      {{ content }}
+    </article>
+    
+    {% if page.sidebar %}
+      <aside class="page-sidebar">
+        <div class="sidebar-card">
+          <h3>{{ page.sidebar.title }}</h3>
+          <p>{{ page.sidebar.content }}</p>
+          {% if page.sidebar.button_text %}
+            <a href="{{ page.sidebar.button_url | relative_url }}" class="btn btn-primary">
+              {{ page.sidebar.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </aside>
+    {% endif %}
+  </div>
+</section>
