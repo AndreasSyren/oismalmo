@@ -114,6 +114,14 @@ body {
   border-radius: var(--radius);
   box-shadow: 0 12px 32px rgba(0,0,0,0.08);
 }
+.hero-section {
+  background-color: var(--color-bg);
+  background-image: 
+    url('../images/leaf-pattern.svg'), 
+    linear-gradient(180deg, #f8f6f0 0%, #ece8db 100%);
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
 
 /* --- Sub page Layout --- */
 .page-hero {
