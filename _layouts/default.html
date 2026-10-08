@@ -15,29 +15,41 @@
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Odla i Stan logotyp">
       </a>
       <button class="mobile-menu-toggle" id="menuToggle" aria-label="Öppna meny">
-      <svg class="sunflower-bee-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Solrosblad -->
-        <g fill="#479a32">
-          <path d="M32 10C34 16 34 20 32 24C30 20 30 16 32 10Z"/>
-          <path d="M32 54C34 48 34 44 32 40C30 44 30 48 32 54Z"/>
-          <path d="M10 32C16 34 20 34 24 32C20 30 16 30 10 32Z"/>
-          <path d="M54 32C48 34 44 34 40 32C44 30 48 30 54 32Z"/>
-          <path d="M16.4 16.4C22 20 25 22 26.3 24.7C24.7 25 22 22 16.4 16.4Z"/>
-          <path d="M47.6 47.6C42 44 39 42 37.7 39.3C39.3 39 42 42 47.6 47.6Z"/>
-          <path d="M16.4 47.6C20 42 22 39 24.7 37.7C25 39.3 22 42 16.4 47.6Z"/>
-          <path d="M47.6 16.4C42 20 39 22 37.7 24.7C39.3 25 42 22 47.6 16.4Z"/>
-        </g>
-        <!-- Solrosens mitt -->
-        <circle cx="32" cy="32" r="8" fill="#2a5a1e"/>
-        <!-- Flygande bi -->
-        <g id="flying-bee">
-          <ellipse cx="48" cy="12" rx="3" ry="1.5" fill="#cc6644" opacity="0.6" transform="rotate(-30 48 12)"/>
-          <ellipse cx="51" cy="14" rx="2.5" ry="1.2" fill="#cc6644" opacity="0.6" transform="rotate(-10 51 14)"/>
-          <ellipse cx="46" cy="16" rx="4" ry="2.5" fill="#2a5a1e" transform="rotate(-20 46 16)"/>
-          <path d="M45 14L44 18M47 13.5L46 17.5" stroke="#f8f6f0" stroke-width="1"/>
-        </g>
-      </svg>
-    </button>
+    <svg class="sunflower-bee-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <path d="M32 38V58" stroke="#479a32" stroke-width="3" stroke-linecap="round"/>
+    <path d="M32 48C26 46 22 40 22 40C22 40 28 40 32 44" fill="#479a32"/>
+    <path d="M32 52C38 50 42 44 42 44C42 44 36 44 32 48" fill="#479a32"/>
+
+  
+    <g fill="#479a32">
+     
+      <path d="M32 8C34 14 34 18 32 20C30 18 30 14 32 8Z"/>
+      <path d="M32 38C34 32 34 28 32 26C30 28 30 32 32 38Z"/>
+      <path d="M17 23C23 25 27 25 29 23C27 21 23 21 17 23Z"/>
+      <path d="M47 23C41 25 37 25 35 23C37 21 41 21 47 23Z"/>
+     
+      <path d="M21 12C26 16 28 18 29.5 20.5C28 21 26 19 21 12Z"/>
+      <path d="M43 34C38 30 36 28 34.5 25.5C36 25 38 27 43 34Z"/>
+      <path d="M21 34C26 30 28 28 29.5 25.5C28 25 26 27 21 34Z"/>
+      <path d="M43 12C38 16 36 18 34.5 20.5C36 21 38 19 43 12Z"/>
+    </g>
+
+    
+    <circle cx="32" cy="23" r="7" fill="#2a5a1e"/>
+
+   
+    <g id="flying-bee">
+      
+      <ellipse cx="48" cy="11" rx="3.5" ry="1.8" fill="#cc6644" opacity="0.75" transform="rotate(-35 48 11)"/>
+      <ellipse cx="52" cy="13" rx="2.8" ry="1.4" fill="#cc6644" opacity="0.75" transform="rotate(-15 52 13)"/>
+      
+      <ellipse cx="46" cy="16" rx="4.5" ry="2.8" fill="#2a5a1e" transform="rotate(-20 46 16)"/>
+      
+      <path d="M45 13.5L44 18M47.5 13L46.5 17.5" stroke="#f8f6f0" stroke-width="1.2"/>
+    </g>
+  </svg>
+</button>
       <nav class="site-nav">
         <ul>
           {% for item in site.navigation %}
