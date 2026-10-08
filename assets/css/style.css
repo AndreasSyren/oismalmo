@@ -215,9 +215,15 @@ body {
   }
 
   .sunflower-bee-icon {
-    width: 42px;
-    height: 42px;
-  }
+  width: 46px;
+  height: 46px;
+  transition: transform 0.25s ease;
+}
+
+.mobile-menu-toggle:hover #flying-bee {
+  transform: translate(-2px, 1px) rotate(-5deg);
+  transition: transform 0.2s ease;
+}
   
   .site-nav {
     display: none; 
