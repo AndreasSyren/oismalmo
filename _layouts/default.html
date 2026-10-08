@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Odla i Stan logotyp">
+      </a>
+      <nav class="site-nav">
+        <ul>
+          {% for item in site.navigation %}
+            <li>
+              <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ '/bli-medlem/' | relative_url }}" class="btn btn-terracotta nav-btn">Engagera dig</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Odla i Stan</h3>
+        <p>En ekonomisk förening som gör staden grönare och skapar gemenskap genom lokal odling.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Länkar</h4>
+        <ul>
+          {% for item in site.navigation %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt & Förening</h4>
+        <p>E-post: info@odlaistan.nu</p>
+        <p>Org.nr: 7696XX-XXXX</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; {{ 'now' | date: "%Y" }} Odla i Stan – Ekonomisk förening</p>
+    </div>
+  </footer>
+
+</body>
+</html>
