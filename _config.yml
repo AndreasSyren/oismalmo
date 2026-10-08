@@ -5,6 +5,6 @@ navigation:
   - title: Start
     url: /
   - title: Om oss
-    url: /om-oss/
+    url: #
   - title: Våra odlingsplatser
     url: /odlingsplatser/
