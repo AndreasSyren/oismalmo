@@ -1,0 +1,14 @@
+title: Odla i Stan
+description: En ekonomisk förening för stadsodling och gemenskap.
+
+navigation:
+  - title: Start
+    url: /
+  - title: Om oss
+    url: /om-oss/
+  - title: Våra odlingsplatser
+    url: /odlingsplatser/
+  - title: Bli medlem
+    url: /bli-medlem/
+  - title: Kontakt
+    url: /kontakt/
