@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Våra odlingsplatser
+url: /odlingsplatser/
 lead: Hitta en stadsodling nära dig och engagera dig i ditt närområde.
 sidebar:
   title: Vill du starta en ny plats?
