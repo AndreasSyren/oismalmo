@@ -83,6 +83,15 @@
       <p>&copy; {{ 'now' | date: "%Y" }} Odla i Stan – Ekonomisk förening</p>
     </div>
   </footer>
+ <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const siteNav = document.getElementById('siteNav');
 
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener('click', function() {
+      siteNav.classList.toggle('is-open');
+    });
+  }
+</script>
 </body>
 </html>
