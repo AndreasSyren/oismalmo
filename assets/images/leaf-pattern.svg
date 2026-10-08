@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" preserveAspectRatio="none" width="100%" height="100%">
+  <defs>
+    <!-- Mjuk toning för bakgrundsvågen -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#479a32" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#479a32" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bakgrundsvåg -->
+  <path fill="url(#waveGradient)" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,180L1380,180C1320,180,1200,180,1080,180C960,180,840,180,720,180C600,180,480,180,360,180C240,180,120,180,60,180L0,180Z"></path>
+
+  <!-- Subtila hussilhuetter i bakgrunden (inspirerade av logotypen) -->
+  <g fill="#479a32" fill-opacity="0.15">
+    <!-- Husgrupp 1 (Vänster) -->
+    <path d="M 150,110 L 170,95 L 190,110 L 190,140 L 150,140 Z" />
+    <path d="M 195,100 L 225,100 L 225,140 L 195,140 Z" />
+    
+    <!-- Husgrupp 2 (Mitten/Höger) -->
+    <path d="M 850,105 L 880,105 L 880,145 L 850,145 Z" />
+    <path d="M 885,115 L 905,100 L 925,115 L 925,145 L 885,145 Z" />
+    
+    <!-- Husgrupp 3 (Höger) -->
+    <path d="M 1200,90 L 1230,90 L 1230,135 L 1200,135 Z" />
+    <path d="M 1235,100 L 1255,85 L 1275,100 L 1275,135 L 1235,135 Z" />
+  </g>
+
+  <!-- Växt- och bladdetaljer (Logotyp-känsla) -->
+  <g fill="#479a32" fill-opacity="0.25">
+    <!-- Grodd/Blad vid vänster husgrupp -->
+    <path d="M 235,140 C 235,120 245,105 255,95 C 255,110 250,125 242,140 Z" />
+    <path d="M 238,130 C 230,120 220,115 210,115 C 222,120 230,125 238,130 Z" />
+
+    <!-- Lök/Rotfrukt-silhuett i mitten -->
+    <path d="M 680,115 C 670,105 670,90 685,80 C 682,73 685,65 690,60 C 692,67 690,73 695,80 C 710,90 710,105 700,115 C 695,120 685,120 680,115 Z" />
+
+    <!-- Stort blad till höger -->
+    <path d="M 1150,140 C 1140,110 1150,80 1175,60 C 1170,85 1175,115 1160,140 Z" />
+    <path d="M 1158,110 C 1140,95 1120,95 1105,100 C 1125,100 1145,102 1158,110 Z" />
+  </g>
+
+  <!-- Mjuk bottenvåg som tonar över till sidans bakgrundsfärg (#f8f6f0) -->
+  <path fill="#f8f6f0" d="M0,130 C320,160 420,100 720,135 C1020,170 1180,110 1440,140 L1440,180 L0,180 Z"></path>
+</svg>
