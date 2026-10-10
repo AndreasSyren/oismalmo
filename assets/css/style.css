@@ -204,20 +204,31 @@ body {
     padding-top: 40px;
     padding-bottom: 140px; 
   }
-  .mobile-menu-toggle {
+    .mobile-menu-toggle {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid rgba(71, 154, 50, 0.25);
+    border-radius: 20px;
+    padding: 6px 14px;
     cursor: pointer;
-    padding: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .menu-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
   .sunflower-bee-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.25s ease;
+    width: 26px;
+    height: 30px; 
+    display: block;
+  }
 }
 
 .mobile-menu-toggle:hover #flying-bee {
