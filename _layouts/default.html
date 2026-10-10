@@ -15,39 +15,40 @@
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Odla i Stan logotyp">
       </a>
       <button class="mobile-menu-toggle" id="menuToggle" aria-label="Öppna meny">
-      <span class="menu-label">Meny</span>
-    <svg class="sunflower-bee-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    
-    <path d="M32 38V58" stroke="#479a32" stroke-width="3" stroke-linecap="round"/>
-    <path d="M32 48C26 46 22 40 22 40C22 40 28 40 32 44" fill="#479a32"/>
-    <path d="M32 52C38 50 42 44 42 44C42 44 36 44 32 48" fill="#479a32"/>
+  <span class="menu-label">Meny</span>
+  <svg class="sunflower-bee-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Enkel och tjock grön stjälk med ett stort, stiliserat blad (vänsterställt) -->
+    <path d="M32 32V56" stroke="#479a32" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Ett enda stort, tydligt grönt blad på stjälken -->
+    <path d="M32 46C24 46 21 40 21 40C21 40 27 41 32 43" fill="#479a32"/>
 
-  
-    <g fill="#479a32">
-     
-      <path d="M32 8C34 14 34 18 32 20C30 18 30 14 32 8Z"/>
-      <path d="M32 38C34 32 34 28 32 26C30 28 30 32 32 38Z"/>
-      <path d="M17 23C23 25 27 25 29 23C27 21 23 21 17 23Z"/>
-      <path d="M47 23C41 25 37 25 35 23C37 21 41 21 47 23Z"/>
-     
-      <path d="M21 12C26 16 28 18 29.5 20.5C28 21 26 19 21 12Z"/>
-      <path d="M43 34C38 30 36 28 34.5 25.5C36 25 38 27 43 34Z"/>
-      <path d="M21 34C26 30 28 28 29.5 25.5C28 25 26 27 21 34Z"/>
-      <path d="M43 12C38 16 36 18 34.5 20.5C36 21 38 19 43 12Z"/>
+    <!-- Kraftigt förenklade gula kronblad (bara 8 tydliga, tjocka blad för minimal grötighet) -->
+    <g fill="#FFCA28">
+      <!-- Topp & Botten -->
+      <path d="M32 6C34.5 12 34.5 16 32 18C29.5 16 29.5 12 32 6Z"/>
+      <path d="M32 32C34.5 26 34.5 22 32 20C29.5 22 29.5 26 32 32Z"/>
+      <!-- Vänster & Höger -->
+      <path d="M19 19C25 21.5 29 21.5 29 19C29 16.5 25 16.5 19 19Z"/>
+      <path d="M45 19C39 21.5 35 21.5 35 19C35 16.5 39 16.5 45 19Z"/>
+      <!-- Diagonalerna -->
+      <path d="M22 10C27 14 29 15.5 29 17.5C29 18.5 27 17 22 10Z"/>
+      <path d="M42 28C37 24 35 22.5 35 20.5C35 19.5 37 21 42 28Z"/>
+      <path d="M22 28C27 24 29 22.5 29 20.5C29 19.5 27 21 22 28Z"/>
+      <path d="M42 10C37 14 35 15.5 35 17.5C35 18.5 37 17 42 10Z"/>
     </g>
 
-    
-    <circle cx="32" cy="23" r="7" fill="#2a5a1e"/>
+    <!-- Stor, solid brun mitt (helt plan, inga skuggor/mönster för bästa synbarhet) -->
+    <circle cx="32" cy="19" r="6.5" fill="#5D4037"/>
 
-   
+    <!-- Ett "blobbigt" och lekfullt litet bi uppe till höger (starkt förenklat) -->
     <g id="flying-bee">
-      
-      <ellipse cx="48" cy="11" rx="3.5" ry="1.8" fill="#cc6644" opacity="0.75" transform="rotate(-35 48 11)"/>
-      <ellipse cx="52" cy="13" rx="2.8" ry="1.4" fill="#cc6644" opacity="0.75" transform="rotate(-15 52 13)"/>
-      
-      <ellipse cx="46" cy="16" rx="4.5" ry="2.8" fill="#2a5a1e" transform="rotate(-20 46 16)"/>
-      
-      <path d="M45 13.5L44 18M47.5 13L46.5 17.5" stroke="#f8f6f0" stroke-width="1.2"/>
+      <!-- Enkel vit vinge -->
+      <ellipse cx="48" cy="9" rx="3" ry="2" fill="#FFFFFF" transform="rotate(-20 48 9)"/>
+      <!-- Knubbig gul/brun bikropp (skalad upp) -->
+      <ellipse cx="47" cy="14" rx="4.5" ry="3.5" fill="#FFB300" transform="rotate(-15 47 14)"/>
+      <!-- Två tjocka, tydliga ränder -->
+      <path d="M45 11L44 17" stroke="#212121" stroke-width="1.8"/>
+      <path d="M48 11.5L47 17.5" stroke="#212121" stroke-width="1.8"/>
     </g>
   </svg>
 </button>
