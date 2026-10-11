@@ -241,7 +241,7 @@ body {
     min-height: 100vh;
     font-size: 2rem;
     background-image: url(../images/leaf-pattern.svg), linear-gradient(180deg, #f8f6f0 0%, #ece8db 100%);
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
