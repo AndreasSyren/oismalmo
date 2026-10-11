@@ -275,6 +275,8 @@ body {
   }
   .footer-grid {
     display: block;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   .page-grid {
     display: grid;
