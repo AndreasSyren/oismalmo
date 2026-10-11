@@ -239,6 +239,7 @@ body {
     box-sizing: border-box;
     height: auto;
     min-height: 100vh;
+    font-size: 2rem;
   }
 
   .mobile-menu-toggle {
