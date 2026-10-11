@@ -6,7 +6,7 @@
   --color-primary-dark: #2a5a1e;     /* Dark forest green text and headlines */
   --color-terracotta: #cc6644;       /* Warm accent colour */
   --color-text: #2c352b;             /* Dark grey greem paragraph text */
-  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --radius: 16px;
 }
 
